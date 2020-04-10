@@ -1,0 +1,220 @@
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+*{
+    font-family: "Poppins";
+}
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0077ff !important;
+}
+
+ .nav-link{
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+
+
+/* utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(./img/asoy.png);
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    
+  
+}
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1)), rgba(0,0,0,0);
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    color: white;
+    margin-top: 25%;
+    font-weight: 400;
+    margin-top: 80px;
+    font-size: 38px;
+    
+}
+
+.jumbotron .display-4 span{
+    font-weight: 700;
+}
+
+.info-panel{
+    box-shadow: 0 3px 20px rgba(121, 121, 121, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+.info-panel:hover{
+    box-shadow:  0px 10px 30px rgba(0, 0, 0, 0.205);
+}
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+
+.info-panel p{
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+}
+
+.gambar-covid{
+    margin-top: 100px;
+    margin-right: 50px;
+    padding-left: 60px;
+   
+    
+}
+
+.text-covid{
+    margin-top: 50px;
+    margin-left: 46px;
+}
+
+.text-covid .heading span{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0077ff;
+    margin: 25px 0px;
+    
+}
+
+.text-covid .heading{
+    font-size: 50px;
+}
+
+.text-covid .isi{
+    color: rgb(116, 116, 116);
+}
+
+.title-text{
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: left;
+    color: #0077ff;
+    font-weight: 700;
+    margin-left: 46px;
+}
+
+.card-page{
+   text-align: center;
+   background:  rgba(237, 252, 255, 0.973);
+   border-radius: 20px;
+   margin: 3rem 0.5rem ;
+}
+
+.card-page:hover{
+    box-shadow:  0px 10px 30px rgba(57,56,61,0.205);
+}
+.card-page .card-title{
+    
+    font-weight: 700;
+    color: black;
+    padding: 30px 20px ;
+    font-size: 26px ;
+    
+
+}
+
+
+}
+
+.card-page .text-title{
+    font-size: 14px;
+    text-align: center;
+    color: #4d4d4d;
+    
+}
+.footer{
+    background-color: #0077ff;
+    margin: ;
+    padding: 8rem 2rem;
+    
+}
+
+.footer .sosmed{
+    color: white;
+
+}
+
+.footer .sosmed a{
+    color: white;
+}
+
+.footer .quotes{
+font-weight: 700;
+color: white;
+}
+
+.footer .copy{
+    color: white;
+}
+/* desktop */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: rgba(0, 0, 0, 1.0);
+    }
+    .nav-link:hover{
+        border-bottom: 3px solid #0077ff;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -75px;
+        height: 500px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+        margin-top: 10%;
+    }
+    .gambar-covid{
+        padding-top: 50px;
+    }
+    .text-covid{
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+
+    .title-text{
+        text-align: center;
+       padding: 20px auto;
+    }
+ }
